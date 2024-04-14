@@ -1,0 +1,185 @@
+.mycontainer {
+  display: flex;
+  /* flex-direction: row; */
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.search-container {
+  width: 40%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19) 0 6px rgba(0, 0, 0, 0.23);
+  font-size: 18px;
+  margin-top: 8px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.deleteButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.search-button {
+  width: 120px;
+  padding: 10px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3 ease-in-out;
+  cursor: pointer;
+  height: 60px;
+  display: inline-block;
+}
+.search-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+.card-container-main{
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  flex-direction: column;
+  width: 22rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #001f3f;
+  padding: 2%;
+  color: #FFF;
+  border-radius: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.weatherMain{
+  width: 30%;
+  flex-grow: 0.1;
+}
+.weatherMain-flex-container{
+  display: flex;
+  flex-direction: column;
+}
+.weatherMain-flex-container > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.goHomeLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  font-size: 26px;
+  text-decoration: none;
+  color: #c6aaef;
+  background-color: #000000;
+  padding: 2px 10px 2px 10px;
+}
+.viewMoreLink {
+  text-decoration: none;
+  color: #c6aaef;
+  background-color: #0000002b;
+  padding: 8px 10px 8px 10px;
+  font-size: 20px;
+  float: center;
+  /* margin-left: 3%; */
+  margin-top: 1%;
+  border-radius: 10px; 
+}
+.card,
+.card h3,
+.card p {
+  background-color: #00bcd4;
+  font-weight: bold;
+}
+
+.card {
+  margin: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19) 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 8px;
+  padding: 16px;
+  opacity: 0.8;
+  text-align: center;
+}
+.card-main-small{
+  margin: 1%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19) 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 8px;
+  padding: 16px;
+  opacity: 0.8;
+  text-align: center;
+}
+.card-main-small,
+.card-main-small h3,
+.card-main-small p {
+  background-color: #00bcd4;
+  font-weight: bold;
+}
+.small-cards{
+  /* width: 10%; */
+}
+.small-card-container
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.favItem {
+  background-color: #fff;
+  padding: 2%;
+  margin: 2% auto 2% auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.favItem button {
+  margin-left: auto;
+}
+
+/* Temperature Unit  labels  */
+.tempunit-label {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 3%;
+}
+@media (max-width: 767px) {
+  .search-container {
+    width: 100%;
+  }
+  .search-button {
+    width: 100%;
+    margin-top: 8px;
+  }
+  .card {
+    width: 100%;
+  }
+  form {
+    flex-direction: column;
+  }
+  .favItem {
+    width: 80%;
+  }
+}

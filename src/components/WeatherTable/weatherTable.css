@@ -1,0 +1,37 @@
+
+   .tableBackground{
+      background-color: #001f3f;
+      color: #FFF;
+   }
+   .flex-container
+   {
+    display: flex;
+    flex-direction: row;
+   
+   }
+   .flex-container>div{
+    flex-basis: 100%;
+   }
+   
+   .weatherTilesContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+   }
+   .weatherTiles{
+    display: flex;
+    flex-direction: row;
+   }
+   .weatherTiles >div{
+    flex: 0 0 30%;     /* Set fixed width */
+    height: 6rem;       /* Set fixed height */
+    background-color: #4a448a;
+    margin: 5px;
+   }
+
+   @media (max-width: 768px) {
+    .flex-container{
+        flex-direction: column;
+    }
+   }

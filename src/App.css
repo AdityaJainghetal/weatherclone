@@ -1,0 +1,82 @@
+.App {
+  text-align: center;  
+}
+
+body{
+  background-image: url('https://www.reconnectwithnature.org/getmedia/cc8a6808-eb92-4cc3-aa79-38336db1aa4d/MammatusClouds-Shutterstock.jpg.aspx?width=2991&height=1865&ext=.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  
+}
+.app-heading{
+  color:#FFF;
+  font-weight: bold;
+  padding:2%;
+  /* background-color: #282c34; */
+}
+.app-heading a{
+  text-decoration: none;
+  color: #FFF;
+}
+.mycontainer
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  min-height: 440px;
+  color: black;
+  text-align: center;
+  margin: 0% auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.2), 4px 6px 20px rgba(0,0,0,0.1) ;
+}
+
+/* For customer error */
+.error-message {
+  color: red;
+  background-color: #212121;
+  padding:2%;
+  font-weight: bold;
+}
+
+@media only screen and (max-width:768px)
+{
+  .mycontainer
+  {
+    width: 90%;
+  }
+  body{
+    background-size:auto;
+    background-repeat:repeat;
+  }
+  .app-heading{
+    color:#FFF;
+    font-weight: bold;
+    padding:10%;
+    /* background-color: #282c34; */
+  }
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.my-footer{
+  background-color: #000000;
+  padding: 5px 0 5px 0;
+  font-size: 20px;
+  text-align: center;
+  color: hwb(201 4% 12%);
+}
+.my-footer a{
+  color: hwb(201 4% 12%);
+  text-decoration: none;
+}
+.my-footer a::before {
+  content: "\00A9";
+  display: inline-block;
+  margin-left: 5px;
+}
